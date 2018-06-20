@@ -4,7 +4,8 @@ FROM python:3-onbuild
 MAINTAINER Kowareta
 # No buffer
 ENV PYTHONUNBUFFERED 1
-
+#Add script to container 
+ADD gethostname.py /
 # Poining at the port number the container should expose
 EXPOSE 80/tcp
 
